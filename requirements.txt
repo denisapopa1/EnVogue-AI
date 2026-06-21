@@ -1,0 +1,16 @@
+# Core API
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
+# Image processing
+pillow>=10.0.0
+numpy>=1.24.0
+
+# AI model (CLIP)
+transformers>=4.40.0
+
+# PyTorch — CPU-only build saves ~600 MB vs the default CUDA build:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Or let pip resolve the default (also runs on CPU):
+torch>=2.0.0
